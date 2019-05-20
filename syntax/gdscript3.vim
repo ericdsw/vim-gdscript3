@@ -14,7 +14,7 @@ syn keyword gdOperator    and or not is in
 syn match   gdOperator    "\V&&\|||\|!\|&\|^\||\|~\|*\|/\|%\|+\|-\|=\|<\|>"
 syn match   gdDelimiter   "\V(\|)\|[\|]\|{\|}"
 syn keyword gdStatement   break continue pass return
-syn keyword gdKeyword     extends tool signal self
+syn keyword gdKeyword     class_name extends tool signal self
                         \ const enum var onready export setget
 syn match   gdKeyword     "\v^\s*((static\s*)=func|class)"
                         \ nextgroup=gdFunction skipwhite
@@ -27,7 +27,7 @@ syn match   gdSetGet "\v(<setget>\s+)@<=<\w+>"
 syn match   gdSetGet "\v(<setget>\s+\w*\s*,\s*)@<=<\w+>"
 
 syn keyword gdNull      null
-syn keyword gdClass     int float bool
+syn keyword gdClass     int float bool void
 syn match   gdClass     "\v<\u\w+>"
 syn match   gdConstant  "\v<[A-Z_]+[A-Z0-9_]*>"
 syn keyword gdClass     AABB IP JSON OS RID
